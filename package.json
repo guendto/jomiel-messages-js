@@ -1,6 +1,6 @@
 {
   "name": "jomiel-messages",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The javascript bindings for the jomiel protobuf messages.",
   "keywords": [
     "jomiel",
