@@ -55,7 +55,6 @@ if (msg.status.code != StatusCode.STATUS_CODE_OK) {
 git clone https://github.com/guendto/jomiel-messages-js
 cd jomiel-messages-js
 npm install
-npm run gen:static
 npm [pack|link|publish|...]
 ```
 
