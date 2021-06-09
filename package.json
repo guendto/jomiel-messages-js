@@ -17,7 +17,8 @@
   ],
   "scripts": {
     "prepare": "./bin/gen-static -p src/jomiel-proto",
-    "prettier": "prettier-eslint --write bin/gen-static \"**/*.@(js|md|json|yaml)\""
+    "prettier": "prettier-eslint --write bin/gen-static \"**/*.@(js|md|json|yaml)\"",
+    "build-docs": "rimraf doc/ && jsdoc --pedantic -c ./jsdoc.json ."
   },
   "dependencies": {
     "protobufjs": "^6.11.2"
