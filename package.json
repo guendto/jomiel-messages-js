@@ -16,7 +16,7 @@
     "/lib"
   ],
   "scripts": {
-    "prepare": "./bin/gen-static -p src/jomiel-proto -w commonjs -o lib/messages.js",
+    "prepare": "./bin/gen-static -p src/jomiel-proto",
     "prettier": "prettier-eslint --write bin/gen-static \"**/*.@(js|md|json|yaml)\""
   },
   "dependencies": {
