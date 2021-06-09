@@ -1,6 +1,6 @@
 {
   "name": "jomiel-messages",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "The javascript bindings for the jomiel protobuf messages.",
   "keywords": [
     "jomiel",
@@ -10,12 +10,14 @@
   "repository": "github:guendto/jomiel-messages-js",
   "author": "Toni Gündoğdu",
   "license": "Apache-2.0",
-  "main": "./lib/messages.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "files": [
     "/lib"
   ],
   "scripts": {
-    "prepare": "./bin/gen-static -p src/jomiel-proto -w commonjs -o lib/messages.js"
+    "prepare": "./bin/gen-static -p src/jomiel-proto",
+    "prettier": "prettier-eslint --write bin/gen-static \"**/*.@(js|md|json|yaml)\""
   },
   "dependencies": {
     "protobufjs": "^6.11.2"
@@ -23,10 +25,12 @@
   "devDependencies": {
     "chalk": "^4.1.1",
     "docopt": "^0.6.2",
-    "glob": "^7.1.6",
-    "jsdoc": "^3.6.6",
+    "execa": "^5.1.1",
+    "glob": "^7.1.7",
+    "jsdoc": "^3.6.7",
     "minimist": "^1.2.5",
+    "prettier-eslint-cli": "^5.0.1",
     "semver": "^7.3.5",
-    "uglify-js": "^3.13.5"
+    "uglify-js": "^3.13.9"
   }
 }
