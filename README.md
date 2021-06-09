@@ -32,7 +32,7 @@ De-serialize the response message:
 ```javascript
 const {
   Response,
-  StatusCode,
+  StatusCode
 } = require("jomiel-messages").jomiel.protobuf.v1beta1;
 
 // bytes: data read from the socket
