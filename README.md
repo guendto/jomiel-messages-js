@@ -31,7 +31,7 @@ const bytes = Inquiry.encode(msg).finish();
 // ...
 ```
 
-De-serialize the response message:
+Deserialize the response message:
 
 ```javascript
 const {
