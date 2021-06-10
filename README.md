@@ -67,15 +67,6 @@ if (msg.status.code != StatusCode.STATUS_CODE_OK) {
 }
 ```
 
-## Building packages from repo
-
-```shell
-git clone https://github.com/guendto/jomiel-messages-js
-cd jomiel-messages-js
-npm install
-npm [pack|link|publish|...]
-```
-
 ## License
 
 `jomiel-messages` is licensed under the [Apache License version
