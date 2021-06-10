@@ -38,10 +38,14 @@ See also protobufjs issue [#1368].
 Serialize an inquiry message:
 
 ```javascript
-const { Inquiry } = require("jomiel-messages").jomiel.protobuf.v1beta1;
-// uri: a string to inquire
+import jomielMessages from "jomiel-messages";
+
+const { Inquiry } = jomielMessages.jomiel.protobuf.v1beta1;
+const uri = "https://...";
+
 const msg = Inquiry.create({ media: { inputUri: uri } });
 const bytes = Inquiry.encode(msg).finish();
+
 // ...
 ```
 
@@ -51,18 +55,13 @@ De-serialize the response message:
 const {
   Response,
   StatusCode
-} = require("jomiel-messages").jomiel.protobuf.v1beta1;
+} = jomielMessages.jomiel.protobuf.v1beta1;
 
-// bytes: data read from the socket
+// bytes: data read from the zeromq socket (returned by jomiel)
 const msg = Response.decode(bytes);
 
-if (msg.status.code != StatusCode.STATUS_CODE_OK) {
-  console.error(`message=msg.status.message`);
-  console.error(`status-code=msg.status.code`);
-  console.error(`error-code=msg.status.error`);
-  console.error(`http-code=msg.status.http.code`);
-  // ...
-} else {
+if (msg.status.code !== StatusCode.STATUS_CODE_OK) {
+  const status = msg.status;
   // ...
 }
 ```
