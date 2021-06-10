@@ -34,10 +34,7 @@ const bytes = Inquiry.encode(msg).finish();
 Deserialize the response message:
 
 ```javascript
-const {
-  Response,
-  StatusCode
-} = jomielMessages.jomiel.protobuf.v1beta1;
+const { Response, StatusCode } = jomielMessages.jomiel.protobuf.v1beta1;
 
 // bytes: data read from the zeromq socket (returned by jomiel)
 const msg = Response.decode(bytes);
