@@ -1,7 +1,7 @@
 # jomiel-messages-js
 
 [![npm-package](https://img.shields.io/npm/v/jomiel-messages?color=%230a66dc)][npm]
-[![code-style](https://img.shields.io/badge/code%20style-prettier+eslint-000000.svg)][prettier-eslint]
+[![code-style](https://img.shields.io/badge/code%20style-prettier+eslint-%230a66dc)][prettier-eslint]
 
 The javascript bindings for the [jomiel] protobuf messages.
 
