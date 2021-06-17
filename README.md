@@ -1,12 +1,15 @@
 # jomiel-messages-js
 
-The javascript bindings for the [jomiel] protobuf messages.
+[![npm-package](https://img.shields.io/npm/v/jomiel-messages?color=%230a66dc)][npm]
+[![code-style](https://img.shields.io/badge/code%20style-prettier+eslint-000000.svg)][prettier-eslint]
 
-## About
+The javascript bindings for the [jomiel] protobuf messages.
 
 - Easy to install [jomiel] protobuf message bindings for js
 - Generated from the [jomiel-proto] declarations
 
+[prettier-eslint]: http://npm.im/prettier-eslint
+[npm]: https://npm.im/jomiel-messages
 [jomiel]: https://github.com/guendto/jomiel
 
 ## Installation
