@@ -16,7 +16,7 @@
     "/lib"
   ],
   "scripts": {
-    "prepare": "./bin/gen-static -p src/jomiel-proto && npm run prettier",
+    "prepack": "./bin/gen-static -p src/jomiel-proto && npm run prettier",
     "prettier": "prettier-eslint --write bin/gen-static \"**/*.@(js|md|json|yaml)\"",
     "build-docs": "rimraf doc/ && jsdoc --pedantic -c ./jsdoc.json ."
   },
