@@ -16,6 +16,7 @@
     "/lib"
   ],
   "scripts": {
+    "release": "standard-version -s --releaseCommitMessageFormat 'chore(release): jomiel-messages version {{currentTag}} (tG)'",
     "prepack": "./bin/gen-static -p src/jomiel-proto && npm run prettier",
     "postpack": "rimraf lib/",
     "prettier": "prettier-eslint --write bin/gen-static \"**/*.@(js|md|json|yaml)\"",
@@ -34,6 +35,7 @@
     "prettier-eslint-cli": "^5.0.1",
     "rimraf": "^3.0.2",
     "semver": "^7.3.5",
+    "standard-version": "^9.3.2",
     "uglify-js": "^3.13.9"
   }
 }
