@@ -26,7 +26,7 @@
     "protobufjs": "^6.11.2"
   },
   "devDependencies": {
-    "chalk": "^4.1.1",
+    "chalk": "^5.0.0",
     "docopt": "^0.6.2",
     "execa": "^5.1.1",
     "glob": "^7.1.7",
