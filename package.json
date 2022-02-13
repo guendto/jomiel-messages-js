@@ -36,6 +36,6 @@
     "rimraf": "^3.0.2",
     "semver": "^7.3.5",
     "standard-version": "^9.3.2",
-    "uglify-js": "^3.13.9"
+    "uglify-js": "^3.15.1"
   }
 }
