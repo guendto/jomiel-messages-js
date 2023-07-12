@@ -23,7 +23,7 @@
     "build-docs": "rimraf doc/ && jsdoc --pedantic -c ./jsdoc.json ."
   },
   "dependencies": {
-    "protobufjs": "^6.11.2"
+    "protobufjs": "^7.2.4"
   },
   "devDependencies": {
     "chalk": "^5.0.0",
