@@ -1,6 +1,6 @@
 {
   "name": "jomiel-messages",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "The javascript bindings for the jomiel protobuf messages.",
   "keywords": [
     "jomiel",
@@ -17,7 +17,7 @@
   ],
   "scripts": {
     "release": "standard-version -s --releaseCommitMessageFormat 'chore(release): jomiel-messages version {{currentTag}} (tG)'",
-    "prepack": "./bin/gen-static -p src/jomiel-proto && npm run prettier",
+    "prepack": "./bin/gen-static -p src/jomiel-proto",
     "postpack": "rimraf lib/",
     "prettier": "prettier-eslint --write bin/gen-static \"**/*.@(js|md|json|yaml)\"",
     "build-docs": "rimraf doc/ && jsdoc --pedantic -c ./jsdoc.json ."
