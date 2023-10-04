@@ -57,24 +57,6 @@ if (msg.status.code !== StatusCode.STATUS_CODE_OK) {
 
 ## Acknowledgements
 
-### Additional devDependencies in package.json
-
-The following **devDependencies** are installed to prevent [pbjs] --
-which is what ./bin/[gen-static] calls -- from installing them
-on-demand:
-
-- chalk
-- jsdoc
-- minimist
-- semver
-- uglify-js
-
-See also protobufjs issue [#1368].
-
-[gen-static]: https://github.com/guendto/jomiel-messages-js/blob/master/bin/gen-static
-[pbjs]: https://github.com/protobufjs/protobuf.js/
-[#1368]: https://github.com/protobufjs/protobuf.js/issues/1368
-
 ### Subprojects (git-subtree)
 
 - [src/jomiel-proto/](src/jomiel-proto/) of [jomiel-proto]

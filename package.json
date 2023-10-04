@@ -1,6 +1,6 @@
 {
   "name": "jomiel-messages",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "The javascript bindings for the jomiel protobuf messages.",
   "keywords": [
     "jomiel",
@@ -17,25 +17,33 @@
   ],
   "scripts": {
     "release": "standard-version -s --releaseCommitMessageFormat 'chore(release): jomiel-messages version {{currentTag}} (tG)'",
-    "prepack": "./bin/gen-static -p src/jomiel-proto && npm run prettier",
+    "prepack": "./bin/gen-static -p src/jomiel-proto",
     "postpack": "rimraf lib/",
     "prettier": "prettier-eslint --write bin/gen-static \"**/*.@(js|md|json|yaml)\"",
     "build-docs": "rimraf doc/ && jsdoc --pedantic -c ./jsdoc.json ."
   },
   "dependencies": {
-    "protobufjs": "^6.11.2"
+    "protobufjs": "^7.2.5"
   },
   "devDependencies": {
-    "chalk": "^5.0.0",
     "docopt": "^0.6.2",
     "execa": "^5.1.1",
-    "glob": "^7.2.0",
-    "jsdoc": "^3.6.10",
-    "minimist": "^1.2.5",
-    "prettier-eslint-cli": "^5.0.1",
-    "rimraf": "^3.0.2",
-    "semver": "^7.3.5",
-    "standard-version": "^9.3.2",
-    "uglify-js": "^3.15.1"
+    "glob": "^10.3.10",
+    "prettier-eslint-cli": "^7.1.0",
+    "protobufjs-cli": "^1.1.2",
+    "rimraf": "^5.0.5",
+    "standard-version": "^9.5.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "semver@<5.7.2": ">=5.7.2",
+      "semver@>=6.0.0 <6.3.1": ">=6.3.1",
+      "ansi-regex@>=3.0.0 <3.0.1": ">=3.0.1",
+      "ansi-regex@>=4.0.0 <4.1.1": ">=4.1.1",
+      "word-wrap@<1.2.4": ">=1.2.4",
+      "semver@>=7.0.0 <7.5.2": ">=7.5.2",
+      "minimatch@<3.0.5": ">=3.0.5",
+      "minimist@>=1.0.0 <1.2.6": ">=1.2.6"
+    }
   }
 }
